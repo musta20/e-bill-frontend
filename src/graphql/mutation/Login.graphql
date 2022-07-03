@@ -1,0 +1,18 @@
+mutation LoginUser($userNameAndPassword: UsernameAndPassword!) {
+  loginUser(userNameAndPassword: $userNameAndPassword) {
+    errors {
+      field
+      message
+    }
+    user {
+      _id
+      Name
+      email
+      Password
+      Contact
+      Adress
+      RegistrationNumber
+      createdAt
+    }
+  }
+}

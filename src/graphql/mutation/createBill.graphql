@@ -1,0 +1,18 @@
+mutation CreateBill($list: [InputProduct!]!, $billInput: InputBill!) {
+  createBill(List: $list, BillInput: $billInput) {
+    errors {
+      field
+      message
+    }
+    Bill {
+      _id
+      UserID
+      CustomerName
+      PdfName
+      CustomerId
+      Total
+      createdAt
+      updatedAt
+    }
+  }
+}

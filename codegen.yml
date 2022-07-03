@@ -1,0 +1,13 @@
+schema: 'http://localhost:4000/graphql'
+documents: './src/**/*.graphql'
+extensions:
+  codegen:
+    generates:
+      ./src/generated/generated-frontend.ts:
+        plugins:
+          - typescript
+          - typescript-operations
+          - typescript-urql
+        config:
+             withHooks: true
+    

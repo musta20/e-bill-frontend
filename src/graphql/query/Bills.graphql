@@ -1,0 +1,13 @@
+query Bills {
+  Bills {
+    
+    _id
+    UserID
+    CustomerName
+    PdfName
+    CustomerId
+    Total
+    createdAt
+    updatedAt
+  }
+}
